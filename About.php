@@ -5,6 +5,52 @@ $companyName = "TechWorld";
 $description = "We are dedicated to providing the best services to our clients.";
 $mission = "Empowering people through technology.";
 ?>
+<?php include __DIR__ . "/header.php"; ?>
+
+<!-- ABOUT HERO -->
+<section class="about-hero">
+    <h1>About Us</h1>
+    <p>Empowering people through technology.</p>
+</section>
+
+<!-- ABOUT DESCRIPTION -->
+<section class="about-content">
+    <p>
+        We are dedicated to providing the best services and building
+        innovative digital solutions for modern businesses.
+    </p>
+</section>
+
+<!-- MISSION -->
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>Empowering people through technology.</p>
+</section>
+
+<!-- TEAM -->
+<section class="team">
+    <h2>Our Team</h2>
+
+    <div class="team-cards">
+        <div class="team-card">
+            <h3>Mary Johnson</h3>
+            <p>Project Manager</p>
+        </div>
+
+        <div class="team-card">
+            <h3>John Smith</h3>
+            <p>Developer</p>
+        </div>
+
+        <div class="team-card">
+            <h3>Sarah Kim</h3>
+            <p>UI/UX Designer</p>
+        </div>
+    </div>
+</section>
+
+<?php include __DIR__ . "/footer.php"; ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,19 +63,56 @@ $mission = "Empowering people through technology.";
 </head>
 <body>
 
-  <header class="navbar parallax" style="background-image: url('images/header.jpg');">
-    <div class="nav-container">
-      <h1 class="logo"><?php echo $companyName; ?></h1>
-      <nav>
-        <a href="index.php">Home</a>
-        <a href="about.php" class="active">About</a>
-        <a href="contact.php">Contact</a>
-      </nav>
+  
+  
+<?php include __DIR__ . "/header.php"; ?>
+
+<!-- ABOUT HERO -->
+<section class="about-hero">
+    <h1>About Us</h1>
+    <p>Empowering people through technology.</p>
+</section>
+
+<!-- ABOUT DESCRIPTION -->
+<section class="about-content">
+    <p>
+        We are dedicated to providing the best services and building
+        innovative digital solutions for modern businesses.
+    </p>
+</section>
+
+<!-- MISSION -->
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>Empowering people through technology.</p>
+</section>
+
+<section class="team">
+    <h2>Our Team</h2>
+
+    <div class="team-cards">
+        <div class="team-card">
+            <h3>Mary Johnson</h3>
+            <p>Project Manager</p>
+        </div>
+
+        <div class="team-card">
+            <h3>John Smith</h3>
+            <p>Developer</p>
+        </div>
+
+        <div class="team-card">
+            <h3>Sarah Kim</h3>
+            <p>UI/UX Designer</p>
+        </div>
     </div>
-  </header>
+</section>
+
+ <?php include __DIR__ . "/footer.php"; ?>
+
 
   <main>
-
+   
     <section class="about fade-in">
       <h2 class="slide-left">About Us</h2>
       <p class="fade-in"><?php echo $mission; ?></p>

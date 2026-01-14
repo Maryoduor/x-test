@@ -77,13 +77,77 @@ $sliderImages = [
         </div>
     </section>
 
-  
-</main>
+    <?php include __DIR__ . "/header.php"; ?>
 
-<footer>
-    <p>&copy; <?php echo date('Y'); ?> My Project. All rights reserved.</p>
-</footer>
 
-<script src="sript.js"></script>
-</body>
-</html>
+<section class="hero">
+    <h2>Welcome to TechWorld</h2>
+    <p>Empowering people through technology.</p>
+    <a href="#about" class="btn">Learn More</a>
+</section>
+
+
+<section class="features">
+    <div class="feature-card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, JavaScript and PHP.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Tech News</h3>
+        <p>Stay up-to-date with technology trends.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Support</h3>
+        <p>We help you build and grow your projects.</p>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+
+    <div class="testimonial-list">
+        <div class="testimonial-card">
+            <p>
+                "Professional and creative! The final product exceeded our expectations."
+            </p>
+            <strong>— Mary W.</strong><br>
+            <span>Designer</span>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "A fantastic experience from start to finish. Highly recommend this team!"
+            </p>
+            <strong>— John K.</strong><br>
+            <span>Marketing Manager</span>
+        </div>
+        <div class="testimonial-card">
+            <p>
+             "Their attention to detail and communication was top-notch."
+        </p>
+        <strong>
+    </div>
+</section>
+
+
+
+<section id="about" class="about">
+    <h2>About</h2>
+    <p>
+        This project combines business, creative, and technical work
+        into one simple website.
+    </p>
+</section>
+
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form method="POST" action="">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<?php include __DIR__ . "/footer.php"; ?>

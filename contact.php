@@ -3,21 +3,7 @@
 $success = "";
 $error = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $name = trim($_POST["name"]);
-    $email = trim($_POST["email"]);
-    $message = trim($_POST["message"]);
-    if ($name == "" || $email == "" || $message == "") {
-        $error = "All fields are required.";
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $error = "Invalid email address.";
-    } else {
-        
-
-        $success = "Message sent successfully!";
-    }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
