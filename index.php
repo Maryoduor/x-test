@@ -63,12 +63,7 @@ $sliderImages = [
                 <span>Marketing Manager</span>
                 <p>"A fantastic experience from start to finish. Highly recommend this team!"</p>
             </div>
-            <div class="testimonial-slide">
-                <img src="images/7.jpg" alt="Client 3">
-                <h4>— Aisha M.</h4>
-                <span>Startup Founder</span>
-                <p>"Their attention to detail and communication was top-notch."</p>
-            </div>
+           
             <div class="testimonial-dots">
                 <span class="active" data-index="0"></span>
                 <span data-index="1"></span>
@@ -125,7 +120,10 @@ $sliderImages = [
             <p>
              "Their attention to detail and communication was top-notch."
         </p>
-        <strong>
+        <div class="testimonial-card">
+         <strong>— Aisha M.</strong><br>
+         <p>
+         <span>StartUp Founder</span>
     </div>
 </section>
 
@@ -138,6 +136,30 @@ $sliderImages = [
         into one simple website.
     </p>
 </section>
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>Empowering people through technology.</p>
+</section>
+
+<h2 class="section-title">Our Team</h2>
+    <div class="team-container">
+        <div class="team-card">
+            <h3>Mary Johnson</h3>
+            <span>Project Manager</span>
+        </div>
+
+        <div class="team-card">
+            <h3>John Smith</h3>
+            <span>Developer</span>
+        </div>
+
+        <div class="team-card">
+            <h3>Sarah Kim</h3>
+            <span>UI/UX Designer</span>
+        </div>
+    </div>
+</section>
+
 
 
 <section id="contact" class="contact">
