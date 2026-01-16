@@ -21,6 +21,14 @@
     </div>
 </section>
 
+  <?php
+$sliderImages = [
+    "slide1.jpg",
+    "slide2.jpg",
+    "slide3.jpg"
+];
+?>
+
 <div class="project-wrapper">
 <?php
 $header1 = "My Great Project";
@@ -30,18 +38,15 @@ $header1 = "My Great Project";
  <div class="slides">
 
     <div class="slide">
-        <img src="images/1.jpg" alt="Slide 1">
-        <span>Slide 1</span>
+        <img src="images/1.jpg">
     </div>
 
     <div class="slide">
         <img src="images/2.jpg" alt="Slide 2">
-        <span>Slide 2</span>
     </div>
 
     <div class="slide">
         <img src="images/3.jpg" alt="Slide 3">
-        <span>Slide 3</span>
     </div>
 
 </div>
@@ -50,13 +55,7 @@ $header1 = "My Great Project";
 <button class="next">&#10095;</button>
 
 
-   <?php
-$sliderImages = [
-    "slide1.jpg",
-    "slide2.jpg",
-    "slide3.jpg"
-];
-?>
+
 
     <div class="project-card">
         <h2>This is my project page</h2>
@@ -65,7 +64,7 @@ $sliderImages = [
 
 </div>
 
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,28 +75,9 @@ $sliderImages = [
 
 </head>
 <body>
-<header class="navbar">
-    <div class="nav-container">
-        <h2 class="logo"><?php echo $header1; ?></h2>
-        <nav>
-          
-        </nav>
-    </div>
-</header>
 
-<div class="slider-container">
-    <div class="slider">
-        <?php foreach($sliderImages as $index => $img): ?>
-            <img src="<?php echo $img; ?>" class="slide <?php echo $index===0 ? 'active' : ''; ?>" alt="Slide <?php echo $index+1; ?>">
-        <?php endforeach; ?>
-    </div>
-    
-    <div class="slider-dots">
-        <?php foreach($sliderImages as $index => $img): ?>
-            <span class="<?php echo $index===0 ? 'active' : ''; ?>" data-index="<?php echo $index; ?>"></span>
-        <?php endforeach; ?>
-    </div>
-</div>
+
+
 
 <section id="about" class="about">
     <h2>About</h2>

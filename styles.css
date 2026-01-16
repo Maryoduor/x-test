@@ -328,7 +328,6 @@ body {
     border-radius: 2px;
 }
 
-/* Container for all testimonials */
 .testimonial-container {
     display: flex;
     flex-wrap: wrap;
@@ -338,7 +337,6 @@ body {
     max-width: 1000px;
 }
 
-/* Individual testimonial card */
 .testimonial-card {
     background: #fff;
     padding: 30px 25px;
@@ -349,6 +347,7 @@ body {
     font-style: italic;
     color: #444;
     transition: transform 0.3s, box-shadow 0.3s;
+    
 }
 
 .testimonial-card:hover {
@@ -356,7 +355,6 @@ body {
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* Client name */
 .testimonial-card h3 {
     margin-top: 20px;
     font-size: 20px;
@@ -364,11 +362,11 @@ body {
     color: #222;
 }
 
-/* Client role */
 .testimonial-card span {
     font-size: 16px;
     color: #555;
 }
+
 
 .project-title {
     text-align: center;
@@ -381,7 +379,6 @@ body {
     margin: 50px auto;
     width: fit-content;
 }  
- /* Team Section Heading */
 .team-title {
     text-align: center;
     font-size: 42px;
@@ -392,7 +389,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Decorative underline */
 .team-title::after {
     content: "";
     display: block;
@@ -404,7 +400,6 @@ body {
 }
 
 
-/* Team container (cards) */
 .team-container {
     display: flex;
     justify-content: center;
@@ -413,7 +408,6 @@ body {
     margin-top: 40px;
 }
 
-/* Individual team cards */
 .team-card {
     background: #fff;
     border-radius: 15px;
@@ -462,25 +456,26 @@ body {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.project-wrapper {
-    max-width: 900px;
-    margin: 80px auto;
-    text-align: center;
-    font-family: Arial, sans-serif;
+.feature-card h3 {
+    font-size: 30px;
+    font-weight: 700;
 }
 
-/* Title */
+.feature-card p {
+    font-size: 18px;
+}
+
 .project-title {
-    font-size: 36px;
-    margin-bottom: 15px;
-    color: #222;
+    font-size: 60px;
+    font-weight: 800;
 }
 
-/* Slides */
+
+
 .slides {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 30px;
     margin-bottom: 35px;
 }
 
@@ -494,10 +489,9 @@ body {
     transition: backgroud 0.3s, transform 0.2s;
 }
 
-.slide:hover {
-    background: #e63946;
-    transform: translateY(-3px);
-}
+
+
+   
 
 
 
