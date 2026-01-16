@@ -31,6 +31,7 @@ $mission = "Empowering people through technology.";
 
     <div class="team-cards">
         <div class="team-card">
+          
             <h3>Mary Johnson</h3>
             <p>Project Manager</p>
         </div>

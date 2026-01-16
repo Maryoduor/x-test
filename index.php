@@ -1,79 +1,3 @@
-<?php
-$header1 = "My Great Project";
-$sliderImages = [
-    "images/1.jpg",
-    "images/2.jpg",
-    "images/3.jpg"
-];
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?php echo $header1; ?></title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-<header class="navbar">
-    <div class="nav-container">
-        <h2 class="logo"><?php echo $header1; ?></h2>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<div class="slider-container">
-    <div class="slider">
-        <?php foreach($sliderImages as $index => $img): ?>
-            <img src="<?php echo $img; ?>" class="slide <?php echo $index===0 ? 'active' : ''; ?>" alt="Slide <?php echo $index+1; ?>">
-        <?php endforeach; ?>
-    </div>
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
-     <h2>This is my project page</h2>
-        <p class="red">Styled with CSS</p>
-    </div>
-    <div class="slider-dots">
-        <?php foreach($sliderImages as $index => $img): ?>
-            <span class="<?php echo $index===0 ? 'active' : ''; ?>" data-index="<?php echo $index; ?>"></span>
-        <?php endforeach; ?>
-    </div>
-</div>
-  <div class="content">
-<main>
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial-slide active">
-                <img src="images/4.jpg" alt="Client 1">
-                <h4>— Mary W.</h4>
-                <span>Designer</span>
-                <p>"Professional and creative! The final product exceeded our expectations."</p>
-            </div>
-            <div class="testimonial-slide">
-                <img src="images/5.jpg" alt="Client 2">
-                <h4>— John K.</h4>
-                <span>Marketing Manager</span>
-                <p>"A fantastic experience from start to finish. Highly recommend this team!"</p>
-            </div>
-           
-            <div class="testimonial-dots">
-                <span class="active" data-index="0"></span>
-                <span data-index="1"></span>
-                <span data-index="2"></span>
-            </div>
-        </div>
-    </section>
-
-    <?php include __DIR__ . "/header.php"; ?>
-
 
 <section class="hero">
     <h2>Welcome to TechWorld</h2>
@@ -97,37 +21,83 @@ $sliderImages = [
     </div>
 </section>
 
-<section class="testimonials">
-    <h2>What Our Clients Say</h2>
+<div class="project-wrapper">
+<?php
+$header1 = "My Great Project";
+?>
+   <h1 class="project-title">My Great Project</h1>
 
-    <div class="testimonial-list">
-        <div class="testimonial-card">
-            <p>
-                "Professional and creative! The final product exceeded our expectations."
-            </p>
-            <strong>— Mary W.</strong><br>
-            <span>Designer</span>
-        </div>
+ <div class="slides">
 
-        <div class="testimonial-card">
-            <p>
-                "A fantastic experience from start to finish. Highly recommend this team!"
-            </p>
-            <strong>— John K.</strong><br>
-            <span>Marketing Manager</span>
-        </div>
-        <div class="testimonial-card">
-            <p>
-             "Their attention to detail and communication was top-notch."
-        </p>
-        <div class="testimonial-card">
-         <strong>— Aisha M.</strong><br>
-         <p>
-         <span>StartUp Founder</span>
+    <div class="slide">
+        <img src="images/1.jpg" alt="Slide 1">
+        <span>Slide 1</span>
     </div>
-</section>
+
+    <div class="slide">
+        <img src="images/2.jpg" alt="Slide 2">
+        <span>Slide 2</span>
+    </div>
+
+    <div class="slide">
+        <img src="images/3.jpg" alt="Slide 3">
+        <span>Slide 3</span>
+    </div>
+
+</div>
+
+<button class="prev">&#10094;</button>
+<button class="next">&#10095;</button>
 
 
+   <?php
+$sliderImages = [
+    "slide1.jpg",
+    "slide2.jpg",
+    "slide3.jpg"
+];
+?>
+
+    <div class="project-card">
+        <h2>This is my project page</h2>
+        <p>Styled with CSS</p>
+    </div>
+
+</div>
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?php echo $header1; ?></title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-container">
+        <h2 class="logo"><?php echo $header1; ?></h2>
+        <nav>
+          
+        </nav>
+    </div>
+</header>
+
+<div class="slider-container">
+    <div class="slider">
+        <?php foreach($sliderImages as $index => $img): ?>
+            <img src="<?php echo $img; ?>" class="slide <?php echo $index===0 ? 'active' : ''; ?>" alt="Slide <?php echo $index+1; ?>">
+        <?php endforeach; ?>
+    </div>
+    
+    <div class="slider-dots">
+        <?php foreach($sliderImages as $index => $img): ?>
+            <span class="<?php echo $index===0 ? 'active' : ''; ?>" data-index="<?php echo $index; ?>"></span>
+        <?php endforeach; ?>
+    </div>
+</div>
 
 <section id="about" class="about">
     <h2>About</h2>
@@ -141,27 +111,56 @@ $sliderImages = [
     <p>Empowering people through technology.</p>
 </section>
 
-<h2 class="section-title">Our Team</h2>
+<section id="testimonials">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+             <img src="images/4.jpg" alt="Client 1">
+            <p>"Professional and creative! The final product exceeded our expectations."</p>
+            <h3>Mary W.</h3>
+            <span>Designer</span>
+        </div>
+     
+        <div class="testimonial-card">
+             <img src="images/6.jpg" alt="Client 2">
+            <p>"A fantastic experience from start to finish. Highly recommend this team!"</p>
+            <h3>John K.</h3>
+            <span>Marketing Manager</span>
+        </div>
+        <div class="testimonial-card">
+             <img src="images/7.jpg" alt="Client 3">
+            <p>"Their attention to detail and communication was top-notch."</p>
+            <h3>Aisha M.</h3>
+            <span>StartUp Founder</span>
+        </div>
+
+    </div>
+</section>
+<section id="team">
+    <h2 class="section-title">Our Team</h2>
+
     <div class="team-container">
+
         <div class="team-card">
+            <img src="images/images (9).jpg" alt="Mary Johnson">
             <h3>Mary Johnson</h3>
             <span>Project Manager</span>
         </div>
 
         <div class="team-card">
+            <img src="images/images (10).jpg" alt="John Smith">
             <h3>John Smith</h3>
             <span>Developer</span>
         </div>
 
         <div class="team-card">
+            <img src="images/images (11).jpg" alt="Sarah Kim">
             <h3>Sarah Kim</h3>
             <span>UI/UX Designer</span>
         </div>
+
     </div>
 </section>
-
-
-
 <section id="contact" class="contact">
     <h2>Contact</h2>
     <form method="POST" action="">
@@ -171,5 +170,4 @@ $sliderImages = [
         <button type="submit">Send Message</button>
     </form>
 </section>
-
 <?php include __DIR__ . "/footer.php"; ?>

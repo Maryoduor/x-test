@@ -309,5 +309,201 @@ body {
     color: #333;
 }
 
+/* Section Heading */
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Container for all testimonials */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+/* Individual testimonial card */
+.testimonial-card {
+    background: #fff;
+    padding: 30px 25px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    font-style: italic;
+    color: #444;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Client name */
+.testimonial-card h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Client role */
+.testimonial-card span {
+    font-size: 16px;
+    color: #555;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 52px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: fit-content;
+}  
+ /* Team Section Heading */
+.team-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+/* Decorative underline */
+.team-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+/* Team container (cards) */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Individual team cards */
+.team-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px 20px;
+    width: 250px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.team-card img:hover {
+    transform: scale(1.1);
+}
+
+.team-card h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #222;
+}
+
+.team-card span {
+    font-size: 16px;
+    color: #555;
+}
+.project-card {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-wrapper {
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+.project-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Slides */
+.slides {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.slide {
+    padding: 10px 18px;
+    background: #333;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: backgroud 0.3s, transform 0.2s;
+}
+
+.slide:hover {
+    background: #e63946;
+    transform: translateY(-3px);
+}
+
+
+
+
+
+
+
 
 
