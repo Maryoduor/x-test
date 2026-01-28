@@ -2,8 +2,8 @@
 $header1 = "My Great Project";
 
 $sliderImages = [
-    "1.jpg",
-    "2.jpg",
+    "Designer.jpg",
+    "mentor.jpg",
     "3.jpg"
 ];
 ?>
@@ -41,19 +41,19 @@ $sliderImages = [
     </div>
 </section>
 
-
-
 <section class="project-wrapper">
     <h1 class="project-title"><?= $header1 ?></h1>
 
     <div class="slides">
-        <?php foreach ($sliderImages as $img): ?>
-            <div class="slide">
-                <img src="images/<?= $img ?>" alt="Project slide">
+        <?php foreach ($sliderImages as $index => $img): ?>
+            <div class="slide <?= $index === 0 ? 'active' : '' ?>">
+                <img src="images/<?= $img ?>" alt="Project slide <?= $index + 1 ?>">
             </div>
         <?php endforeach; ?>
-    </div>
 
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
 
     <div class="project-card">
         <h2>This is my project page</h2>
@@ -137,6 +137,33 @@ $sliderImages = [
 </section>
 
 <?php include __DIR__ . "/footer.php"; ?>
+<script>
+    const slides = document.querySelectorAll(".slide");
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+    }
+
+    nextBtn.addEventListener("click", () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    });
+
+    prevBtn.addEventListener("click", () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    });
+
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }, 4000);
+</script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-<?php
+ <?php
 $title = "Web Development";
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ $title = "Web Development";
         <li>⚙️ JavaScript for interactivity</li>
         <li>🗄️ PHP for backend development</li>
     </ul>
-
+     
     <a href="index.php" class="btn">← Back to Home</a>
 
 </section>

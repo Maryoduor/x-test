@@ -15,15 +15,18 @@ $title = "Tech News";
     <p>Stay informed with the latest technology trends.</p>
 </section>
 
-<section class="updates-section">
-    <h3>Latest Updates</h3>
+<section class="updates">
+    <h1>Latest Updates</h1>
     <p>
-        We bring you news about software development, AI,
-        cybersecurity, startups, and new technologies.
+        We bring you news about software development, AI, cybersecurity,
+        startups, and new technologies.
     </p>
 
-    <a href="index.php" class="btn">← Back to Home</a>
+    <a href="index.php" class="back-link">← Back to Home</a>
 </section>
+
+
+
 
 </body>
 </html>

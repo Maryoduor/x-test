@@ -21,9 +21,7 @@ $title = "Support";
         Get guidance, troubleshooting help, and expert advice
         to grow your projects and skills.
     </p>
-
     <a href="index.php" class="btn">← Back to Home</a>
 </section>
-
 </body>
 </html>
