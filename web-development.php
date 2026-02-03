@@ -1,5 +1,7 @@
  <?php
 $title = "Web Development";
+
+$slogan = "We create websites in a giffy using AI ";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,10 +12,9 @@ $title = "Web Development";
 </head>
 <body>
     
-<section class="hero">
-    <h2><?= $title ?></h2>
-    <p>Learn how to build modern, responsive websites.</p>
-</section>
+<?php
+require_once "banner_inc.php";
+?>
 
 <section class="learn-section">
 

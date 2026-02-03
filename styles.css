@@ -303,7 +303,7 @@ body {
 }
 .section-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 82px;
     font-weight: 600;
     margin:  50;
     color: #333;
@@ -323,7 +323,7 @@ body {
     display: block;
     width: 80px;
     height: 4px;
-    background: #007bff;
+    background: #1eff00;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -634,6 +634,16 @@ body {
     border-radius: 8px;
     font-size: 1.05rem;
 }
+.latest-updates {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
 
 
 

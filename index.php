@@ -6,6 +6,8 @@ $sliderImages = [
     "mentor.jpg",
     "3.jpg"
 ];
+
+$slogan= "Empowering people through Tech ";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,11 +19,9 @@ $sliderImages = [
 </head>
 <body>
 
-<section class="hero">
-    <h2>Welcome to TechWorld</h2>
-    <p>Empowering people through technology.</p>
-    <a href="#about" class="btn">Learn More</a>
-</section>
+<?php
+require_once("banner_inc.php");
+?>
 
 
 <section class="features">
