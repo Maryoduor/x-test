@@ -2,179 +2,616 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mary | Web Developer</title>
 
-<link rel="stylesheet" href="style.css">
+<title>Teaching App</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-   
+<div class="home-container">
 
-<section id="home" class="home">
+<h1>Welcome to My Teaching App</h1>
 
-    <h1>Hello, I'm Mary</h1>
+<p>Learn and Upload Lessons Easily</p>
 
-    <p>Professional Web Developer</p>
+<a href="login.html">
+<button class="login-btn">Login</button>
+</a>
 
-    <button onclick="hireMe()">Hire Me</button>
-</section>
+<a href="register.html">
+<button class="register-btn">Register</button>
+</a>
+
+<script src="js/auth.js"></script>
+<script src="js/firebase.js"></script>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/push.js"></script>
+</div>
+<script type="module">
+import { requestPermission } from "./js/push.js";
+
+requestPermission();
+</script>
+
+
+</body>
+
+</html>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
 
-<title>About Mary</title>
-
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<section class="about">
+<div class="login-container">
 
-<h1>About Me</h1>
+<h2>Login</h2>
 
-<img src="images/Mary.jpg" width="150" alt="Mary Photo">
+<input type="email" placeholder="Email">
 
-<p>
-Hello, I'm Mary, a passionate Web Developer.
+<input type="password" placeholder="Password">
 
-I create modern, beautiful, and professional websites using:
-</p>
-<div class="Skills"></div>
+<button class="student-btn">Login as Student</button>
 
-<span>HTML</span>
+<button class="teacher-btn">Login as Teacher</button>
 
-<span>CSS</span>
+<br><br>
 
-<span>JavaScript</span>
-
-<span>PHP</span>
+<a href="register.html" class="register-link">Create Account</a>
 
 </div>
 
-<p>
+</body>
 
-My goal is to become a professional web developer and help businesses grow online.
-
-</p>
-
-!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>My Projects</title>
-
-<link rel="stylesheet" href="style.css">
-
-<section class="projects">
-
-<h1 class="title">My Projects</h1>
-
-<div class="project-container">
-
-<div class="project-card">
-<img src="images/project1.jpg" alt="Project 1">
-<h2>Project 1</h2>
-
-<h3>Tech News Website</h3>
-
-<p>A modern website for latest tech news.</p>
-
-</div>
-
-<div class="project-card">
-<img src="images/project2.jpg" alt="Project 2">
-<h2>Project 2</h2>
-
-<h3>Login System</h3>
-
-<p>User registration and login system.</p>
-
-</div>
-
-
-<div class="project-card">
-<img src="images/project3.jpg" alt="Project 3">
-<h2>Project 3</h2>
-
-<h3>School Website</h3>
-
-<p>Professional school website design.</p>
-
-</div>
-
-</div>
-
-</section>
+</html>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
 
-<title>Contact Mary</title>
-
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<section class="contact">
+<div class="register-container">
 
-<h1>Contact Me</h1>
+<h2>Register Account</h2>
 
-<p>Feel free to contact me</p>
+<input type="text" placeholder="Enter Full Name">
 
-<form>
+<input type="email" placeholder="Enter Email">
 
-    <input type="text"placeholder ="Your Name"required>
+<input type="password" placeholder="Enter Password">
 
-    <br><br>
+<input type="password" placeholder="Confirm Password">
 
-    <input type="email"placeholder ="Your Email"required>
+<button class="register-btn">Register</button>
 
-    <br><br>
+<br><br>
 
-    <textarea placeholder="Your Messange"required></textarea>
+<a href="login.html" class="login-link">Go to Login</a>
 
-    <br><br>
+</div>
 
-    <button type="submit">Send Messange</button>
+</body>
 
-    </form>
+</html>
 
-    <br>
+<!DOCTYPE html>
+<html>
 
-    <p>Email: mary@email.com</p>
+<head>
+<title>User Profile</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 
-    <p>Phone: 254 0792501370</p>
+<body>
 
+<div class="dashboard">
 
+<h1>User Profile</h1>
 
+<div class="user-info">
+<p><strong>Full Name:</strong> Mary Oduor</p>
+<p><strong>Email:</strong> mary@example.com</p>
+<p><strong>Role:</strong> Student</p>
+</div>
 
-   
+<br>
 
+<a href="student-dashboard.html">
+<button class="profile-btn">Back to Dashboard</button>
+</a>
 
-
-<script src="script.js"></script>
+</div>
 
 </body>
 </html>
 
+<!DOCTYPE html>
+<html>
 
+<head>
+<title>Classes</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 
+<body>
 
+<div class="dashboard">
+
+<h1>Classes</h1>
+
+<button class="upload-btn">Add New Class</button>
+
+<ul class="lesson-list">
+
+<li>
+Grade 10 - Mathematics
+<button class="view-btn">Open</button>
+</li>
+
+<li>
+Grade 9 - English
+<button class="view-btn">Open</button>
+</li>
+
+</ul>
+
+<a href="teacher-dashboard.html">
+<button class="logout-btn">Back</button>
+</a>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Welcome, Student!</h1>
+
+<a href="classes.html">
+<button class="view-btn">My Classes</button>
+</a>
+
+<a href="announcements.html">
+<button class="view-btn">Announcements</button>
+</a>
+
+<a href="view-schedules.html">
+<button class="view-btn">View Schedule</button>
+</a>
+
+<a href="submit-assignment.html">
+<button class="upload-btn">Submit Assignment</button>
+</a>
+
+<a href="student-announcements.html">
+<button class="view-btn">View Announcements</button>
+</a>
+
+<a href="profile.html">
+<button class="profile-btn">Profile</button>
+</a>
+
+<h3>Lessons</h3>
+
+<ul class="lesson-list">
+
+<li>
+Mathematics
+<button class="view-btn">View</button>
+</li>
+
+<li>
+English
+<button class="view-btn">View</button>
+</li>
+
+<li>
+Science
+<button class="view-btn">View</button>
+</li>
+
+</ul>
+
+<br>
+
+<button class="profile-btn">Profile</button>
+
+<a href="index.html">
+<button class="logout-btn">Logout</button>
+</a>
+
+</div>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Teacher Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    
+
+<h1>Welcome, Teacher!</h1>
+
+<h3>Manage Lessons</h3>
+
+<a href="upload-lesson.html">
+<button class="upload-btn">Upload New Lesson</button>
+</a>
+
+<a href="classes.html">
+<button class="upload-btn">Classes</button>
+</a>
+
+<a href="announcements.html">
+<button class="profile-btn">Announcements</button>
+</a>
+
+<a href="view-schedules.html">
+<button class="upload-btn">View Schedule</button>
+</a>
+
+<a href="view-assignments.html">
+<button class="upload-btn">View Assignments</button>
+</a>
+
+<a href="teacher-announcements.html">
+<button class="upload-btn">Post Announcements</button>
+</a>
+
+<a href="profile.html">
+<button class="profile-btn">Profile</button>
+</a> 
+<table>
+
+<tr>
+<th>Lesson</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Mathematics</td>
+<td>
+<button class="edit-btn">Edit</button>
+<button class="delete-btn">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>English</td>
+<td>
+<button class="edit-btn">Edit</button>
+<button class="delete-btn">Delete</button>
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<button class="profile-btn">Profile</button>
+
+<a href="index.html">
+<button class="logout-btn">Logout</button>
+</a>
+
+</div>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Announcements</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Important Updates</h1>
+
+<ul class="announcement-list">
+<li><strong>Exam:</strong> Mathematics test on Monday.</li>
+<li><strong>Assignment:</strong> Submit Science report by Friday.</li>
+<li><strong>New Lesson:</strong> English Grammar uploaded.</li>
+</ul>
+
+<br>
+
+<a href="student-dashboard.html">
+<button class="profile-btn">Back</button>
+</a>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Teacher Announcements</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Post Important Updates</h1>
+
+<form>
+
+<label>Title</label>
+<input type="text" placeholder="Announcement Title">
+
+<label>Details</label>
+<textarea placeholder="Write your announcement here" rows="5"></textarea>
+
+<br>
+
+<button class="upload-btn">Post Announcement</button>
+
+</form>
+
+<br>
+
+<a href="teacher-dashboard.html">
+<button class="profile-btn">Back</button>
+</a>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Submit Assignment</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Submit Assignment</h1>
+
+<form>
+
+<label>Assignment Title</label>
+<input type="text" placeholder="Enter assignment title">
+
+<label>Select Subject</label>
+<select>
+<option>Mathematics</option>
+<option>English</option>
+<option>Science</option>
+</select>
+
+<label>Upload File</label>
+<input type="file">
+
+<br><br>
+
+<button class="upload-btn">Submit Assignment</button>
+
+</form>
+
+<br>
+
+<a href="student-dashboard.html">
+<button class="profile-btn">Back</button>
+</a>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>View Assignments</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Student Assignments</h1>
+
+<table>
+
+<tr>
+<th>Student Name</th>
+<th>Subject</th>
+<th>Assignment</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Mary</td>
+<td>Mathematics</td>
+<td>Algebra Assignment</td>
+<td>
+<button class="edit-btn">View</button>
+<button class="delete-btn">Grade</button>
+</td>
+</tr>
+
+<tr>
+<td>John</td>
+<td>English</td>
+<td>Essay</td>
+<td>
+<button class="edit-btn">View</button>
+<button class="delete-btn">Grade</button>
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<a href="teacher-dashboard.html">
+<button class="profile-btn">Back</button>
+</a>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Class Schedules</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Class Schedules</h1>
+
+<table class="schedule-table">
+<tr>
+<th>Time</th>
+<th>Class</th>
+<th>Teacher</th>
+<th>Room</th>
+</tr>
+
+<tr>
+<td>8:00 AM - 9:00 AM</td>
+<td>Mathematics</td>
+<td>Mr. John</td>
+<td>101</td>
+</tr>
+
+<tr>
+<td>9:00 AM - 10:00 AM</td>
+<td>English</td>
+<td>Ms. Mary</td>
+<td>102</td>
+</tr>
+
+<tr>
+<td>10:00 AM - 11:00 AM</td>
+<td>Science</td>
+<td>Mr. Paul</td>
+<td>103</td>
+</tr>
+
+</table>
+
+<br>
+
+<a href="student-dashboard.html"><button class="profile-btn">Back</button></a>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+    <div class="dashboard-container">
+    <h1>Welcome to Your Dashboard</h1>
+    <p>Welcome! Manage and upload your lessons easily.</p>
+<h2>Upload a Lesson File</h2>
+<input type="file" id="lessonFile">
+<button id="uploadBtn">Upload</button>
+
+<h2>Available Lessons</h2>
+<ul id="fileList"></ul>
+    <button id="logoutBtn">Logout</button>
+</div>
+
+<script type="module" src="js/files.js"></script>
+<script type="module" src="js/push.js"></script>
+<script type="module" src="js/firebase.js"></script>
+
+ 
+  <script type="module">
+    import { auth } from "./js/firebase.js";
+    import { signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+    const logoutBtn = document.getElementById("logoutBtn");
+
+    logoutBtn.addEventListener("click", async () => {
+      await signOut(auth);
+      alert("Logged out!");
+      window.location.href = "index.html"; 
+    });
+  </script>
+</body>
+</html>
